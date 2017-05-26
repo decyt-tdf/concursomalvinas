@@ -1,3 +1,5 @@
-FROM eboraas/apache-php
-WORKDIR /var/www/html
+FROM node:alpine
 ADD . /concursomalvinas
+WORKDIR /concursomalvinas
+RUN npm install
+CMD ["node","server.js"]
