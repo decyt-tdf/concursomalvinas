@@ -2,5 +2,5 @@ var http = require('http');
 var ecstatic = require('ecstatic');
 http.createServer(
   ecstatic({ root: __dirname + '/public/'})
-).listen(80); 
-console.log('Listening on :80');
+).listen(8089); 
+console.log('Listening on :8089');
